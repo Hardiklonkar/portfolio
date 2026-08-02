@@ -12,12 +12,25 @@ function Projects() {
           {projects.map((project, index) => (
             <div className="project-card" key={index}>
 
-              {/* Project Image */}
-              <img
-                src={project.image}
-                alt={project.title}
-                className="project-image"
-              />
+              {/* Project Images */}
+{project.images ? (
+  <div className="project-images">
+    {project.images.map((img, i) => (
+      <img
+        key={i}
+        src={img}
+        alt={project.title}
+        className="project-image"
+      />
+    ))}
+  </div>
+) : (
+  <img
+    src={project.image}
+    alt={project.title}
+    className="project-image"
+  />
+)}
 
               <h3>{project.title}</h3>
 
