@@ -1,8 +1,19 @@
 const projects = [
   {
-    title: "Bank Management System",
+    title: "AI Chatbot with Gemini",
+    image: "/images/projects/ai-chatbot-dashboard.png",
     description:
-      "A Bank Management System developed using Python, Flask, SQLite, HTML, CSS, and Bootstrap. It allows users to create accounts, deposit and withdraw money, transfer funds, and view transaction history through a simple web interface.",
+      "An AI-powered chatbot built using Python, Streamlit, Google Gemini API, and SQLite. It includes user authentication, AI conversation, PDF upload & summarization, chat history, and chat export to PDF.",
+    tech: "Python • Streamlit • Gemini API • SQLite • ReportLab",
+    github: "https://github.com/Hardiklonkar/AI-Chatbot-Gemini",
+    demo: "#",
+  },
+
+  {
+    title: "Bank Management System",
+    image: "/images/projects/bank-management.png",
+    description:
+      "A Bank Management System developed using Python, Flask, SQLite, HTML, CSS, and Bootstrap.",
     tech: "Python • Flask • SQLite • HTML • CSS • Bootstrap",
     github: "https://github.com/Hardiklonkar/BankManagementSystem",
     demo: "#",
