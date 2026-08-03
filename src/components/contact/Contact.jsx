@@ -8,7 +8,7 @@ function Contact() {
         <h2>Contact Me</h2>
 
         <p>
-          I'm currently looking for Java Full Stack Internship opportunities.
+          I'm currently looking for Full Stack Development, Java, Python, and AI Internship opportunities.
         </p>
 
         <div className="contact-info">
@@ -20,6 +20,20 @@ function Contact() {
               lonkarhardik@gmail.com
             </a>
           </p>
+
+
+          <p>
+            🌐 Portfolio:
+            <br />
+            <a
+              href="https://portfolio-vert-one-23.vercel.app"
+              target="_blank"
+              rel="noreferrer"
+            >
+              portfolio-vert-one-23.vercel.app
+            </a>
+          </p>
+
 
           <p>
             💻 GitHub:
@@ -33,6 +47,7 @@ function Contact() {
             </a>
           </p>
 
+
           <p>
             💼 LinkedIn:
             <br />
@@ -44,6 +59,7 @@ function Contact() {
               linkedin.com/in/hardik-lonkar-18446296
             </a>
           </p>
+
 
         </div>
 

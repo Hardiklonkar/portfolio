@@ -11,14 +11,15 @@ function Hero() {
         </h1>
 
         <h2>
-          Java Full Stack Developer
+          Full Stack Developer | AI Enthusiast
         </h2>
 
         <p>
-          MCA Student | Java | Spring Boot | React | MySQL
+          MCA Student | Java | Python | React | PHP | MySQL | AI & Machine Learning
         </p>
 
         <div className="hero-buttons">
+
           <a href="#projects" className="btn primary">
             View Projects
           </a>
@@ -26,6 +27,7 @@ function Hero() {
           <a href="#contact" className="btn secondary">
             Contact Me
           </a>
+
         </div>
 
       </div>

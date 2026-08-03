@@ -18,6 +18,7 @@ const projects = [
     demo: "https://ai-chatbot-o6hyxevhdtye5g92ta6lru.streamlit.app/",
   },
 
+
   {
     title: "Bank Management System",
 
@@ -29,6 +30,23 @@ const projects = [
     tech: "Python • Flask • SQLite • HTML • CSS • Bootstrap",
 
     github: "https://github.com/Hardiklonkar/BankManagementSystem",
+
+    demo: "#",
+  },
+
+
+  {
+    title: "JobConnect - Online Job Portal",
+
+    image: "/images/projects/jobconnect.png",
+
+    description:
+      "A full-stack online job portal developed using PHP and MySQL. The system includes Admin, Company, and User modules with job posting, job application, resume upload, and application status management features.",
+
+    tech: "PHP • MySQL • HTML • CSS • JavaScript • XAMPP",
+
+    github:
+      "https://github.com/Hardiklonkar/JobConnect-Online-Job-Portal",
 
     demo: "#",
   },

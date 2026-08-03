@@ -7,7 +7,7 @@ function Navbar() {
     <nav className="navbar">
 
       <div className="logo">
-        Hardik.dev
+        _lonkarhardikk
       </div>
 
       <ul className="nav-links">
@@ -18,6 +18,10 @@ function Navbar() {
 
         <li>
           <a href="#about">About</a>
+        </li>
+
+        <li>
+          <a href="#education">Education</a>
         </li>
 
         <li>
