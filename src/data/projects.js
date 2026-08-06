@@ -50,6 +50,26 @@ const projects = [
 
     demo: "#",
   },
+
+{
+  title: "Digital Library Management System",
+
+  images: [
+    "/images/projects/digital-library-home.png",
+    "/images/projects/digital-library-admin.png",
+    "/images/projects/digital-library-books.png",
+  ],
+
+  description:
+    "A web-based Digital Library Management System developed using PHP and MySQL. Students can register, login, search books, issue and return books, while admins can manage books, users, categories, reports, image uploads and PDF books.",
+
+  tech: "PHP • MySQL • Bootstrap • HTML • CSS • JavaScript • XAMPP",
+
+  github:
+    "https://github.com/Hardiklonkar/Digital-Library-Management-System",
+
+  demo: "#",
+},
 ];
 
 export default projects;
