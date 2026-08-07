@@ -1,3 +1,4 @@
+
 import "./Contact.css";
 
 function Contact() {
@@ -21,6 +22,19 @@ function Contact() {
             </a>
           </p>
 
+          <p>
+            📱 Mobile:
+            <br />
+            <a href="tel:7823872019">
+              7823872019
+            </a>
+          </p>
+
+          <p>
+            🎓 College:
+            <br />
+            <span>MIT CSN, Chhatrapati Sambhajinagar</span>
+          </p>
 
           <p>
             🌐 Portfolio:
@@ -34,7 +48,6 @@ function Contact() {
             </a>
           </p>
 
-
           <p>
             💻 GitHub:
             <br />
@@ -46,7 +59,6 @@ function Contact() {
               github.com/Hardiklonkar
             </a>
           </p>
-
 
           <p>
             💼 LinkedIn:
@@ -60,7 +72,6 @@ function Contact() {
             </a>
           </p>
 
-
         </div>
 
       </div>
@@ -69,3 +80,4 @@ function Contact() {
 }
 
 export default Contact;
+
