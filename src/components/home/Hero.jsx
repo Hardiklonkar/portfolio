@@ -1,3 +1,4 @@
+
 import "./Hero.css";
 
 function Hero() {
@@ -26,6 +27,14 @@ function Hero() {
 
           <a href="#contact" className="btn secondary">
             Contact Me
+          </a>
+
+          <a
+            href="/resume.pdf"
+            download
+            className="btn primary"
+          >
+            Download Resume
           </a>
 
         </div>
