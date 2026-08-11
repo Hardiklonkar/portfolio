@@ -1,49 +1,91 @@
+
 import "./Footer.css";
 
 function Footer() {
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer className="footer">
 
-      <h3>lonkarhardikk</h3>
+      <div className="footer-container">
 
-      <p>
-        Full Stack Developer | AI Enthusiast | MCA Student
-      </p>
+        {/* Brand */}
+        <div className="footer-brand">
+          <a href="#home" className="footer-logo">
+            <span>&lt;</span>Hardik<span>/&gt;</span>
+          </a>
 
-      <div className="footer-links">
+          <p>
+            Web Developer | AI & ML Enthusiast | MCA Student
+          </p>
 
-        <a
-          href="https://github.com/Hardiklonkar"
-          target="_blank"
-          rel="noreferrer"
-        >
-          GitHub
-        </a>
+          <p className="footer-location">
+            📍 Chhatrapati Sambhajinagar, Maharashtra
+          </p>
+        </div>
 
-        <a
-          href="https://www.linkedin.com/in/hardik-lonkar-18446296"
-          target="_blank"
-          rel="noreferrer"
-        >
-          LinkedIn
-        </a>
+        {/* Quick Links */}
+        <div className="footer-section">
+          <h3>Quick Links</h3>
 
-        <a
-          href="https://portfolio-vert-one-23.vercel.app"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Portfolio
-        </a>
+          <div className="footer-nav">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#certificates">Certificates</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+
+        {/* Social Links */}
+        <div className="footer-section">
+          <h3>Connect With Me</h3>
+
+          <div className="footer-socials">
+
+            <a
+              href="https://github.com/Hardiklonkar"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/hardik-lonkar-18446296"
+              target="_blank"
+              rel="noreferrer"
+            >
+              LinkedIn
+            </a>
+
+            <a href="mailto:lonkarhardik@gmail.com">
+              Email
+            </a>
+
+          </div>
+        </div>
 
       </div>
 
-      <p className="copyright">
-        © 2026 _lonkarhardikk. All Rights Reserved.
-      </p>
+      {/* Bottom */}
+      <div className="footer-bottom">
+
+        <p>
+          © {currentYear} Hardik Lonkar. All Rights Reserved.
+        </p>
+
+        <a href="#home" className="back-top">
+          ↑ Back to Top
+        </a>
+
+      </div>
 
     </footer>
   );
 }
 
 export default Footer;
+

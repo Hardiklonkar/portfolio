@@ -14,9 +14,11 @@ const projects = [
 
     tech: "Python • Streamlit • Gemini API • SQLite • ReportLab",
 
-    github: "https://github.com/Hardiklonkar/AI-Chatbot-Gemini",
+    github:
+      "https://github.com/Hardiklonkar/AI-Chatbot-Gemini",
 
-    demo: "https://ai-chatbot-o6hyxevhdtye5g92ta6lru.streamlit.app/",
+    demo:
+      "https://ai-chatbot-o6hyxevhdtye5g92ta6lru.streamlit.app/",
   },
 
   {
@@ -29,7 +31,8 @@ const projects = [
 
     tech: "Python • Flask • SQLite • HTML • CSS • Bootstrap",
 
-    github: "https://github.com/Hardiklonkar/BankManagementSystem",
+    github:
+      "https://github.com/Hardiklonkar/BankManagementSystem",
 
     demo: "#",
   },
@@ -51,6 +54,29 @@ const projects = [
   },
 
   {
+    title: "Cafe Management System",
+
+    images: [
+      "/images/projects/cafe-home.png",
+      "/images/projects/cafe-menu.png",
+      "/images/projects/cafe-cart.png",
+      "/images/projects/cafe-admin-dashboard.png",
+      "/images/projects/cafe-ai-assistant.png",
+    ],
+
+    description:
+      "A full-stack Cafe Management System developed using PHP and MySQL with an integrated AI Cafe Assistant using Python and Flask. The system includes customer registration and login, food menu, search and category filtering, cart management, online ordering, order tracking, customer profile, billing, and a complete admin panel for food and order management.",
+
+    tech:
+      "PHP • MySQL • HTML • CSS • JavaScript • Python • Flask • XAMPP",
+
+    github:
+      "https://github.com/Hardiklonkar/CafeManagementSystem",
+
+    demo: "#",
+  },
+
+  {
     title: "Digital Library Management System",
 
     images: [
@@ -62,7 +88,8 @@ const projects = [
     description:
       "A web-based Digital Library Management System developed using PHP and MySQL. Students can register, login, search books, issue and return books, while admins can manage books, users, categories, reports, image uploads and PDF books.",
 
-    tech: "PHP • MySQL • Bootstrap • HTML • CSS • JavaScript • XAMPP",
+    tech:
+      "PHP • MySQL • Bootstrap • HTML • CSS • JavaScript • XAMPP",
 
     github:
       "https://github.com/Hardiklonkar/Digital-Library-Management-System",
@@ -84,7 +111,8 @@ const projects = [
     description:
       "A web-based Railway Reservation System developed using PHP and MySQL. The system allows users to search trains, book tickets, manage bookings, view tickets and profiles, while administrators can manage users, trains and bookings through an admin dashboard.",
 
-    tech: "PHP • MySQL • HTML • CSS • JavaScript • XAMPP",
+    tech:
+      "PHP • MySQL • HTML • CSS • JavaScript • XAMPP",
 
     github:
       "https://github.com/Hardiklonkar/railway-reservation-system",
@@ -94,3 +122,4 @@ const projects = [
 ];
 
 export default projects;
+

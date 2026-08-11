@@ -10,20 +10,25 @@ import Certificates from "./components/certificates/Certificates";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/layout/Footer";
 
+import "./App.css";
+
 function App() {
   return (
-    <>
+    <div className="app">
       <Navbar />
 
-      <Hero />
-      <About />
-      <Skills />
-      <Education />
-      <Projects />
-    <Certificates />
-    <Contact />
-    <Footer />
-    </>
+      <main>
+        <Hero />
+        <About />
+        <Skills />
+        <Education />
+        <Projects />
+        <Certificates />
+        <Contact />
+      </main>
+
+      <Footer />
+    </div>
   );
 }
 
