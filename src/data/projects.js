@@ -1,4 +1,3 @@
-
 const projects = [
   {
     title: "AI Chatbot with Gemini",
@@ -119,7 +118,32 @@ const projects = [
 
     demo: "#",
   },
+
+  {
+    title: "Foodie - Online Food Ordering System",
+
+    images: [
+      "/images/projects/foodie-home.png",
+      "/images/projects/foodie-menu.png",
+      "/images/projects/foodie-cart.png",
+      "/images/projects/foodie-checkout.png",
+      "/images/projects/foodie-order-success.png",
+      "/images/projects/foodie-about.png",
+      "/images/projects/foodie-contact.png",
+      "/images/projects/foodie-admin-dashboard.png",
+    ],
+
+    description:
+      "A full-stack Online Food Ordering System developed using PHP and MySQL. The system allows customers to browse food items, search and filter the menu, add products to cart, update quantities, checkout and place orders. It also includes user authentication, order confirmation, responsive UI and a complete admin panel for managing food items, users and customer orders.",
+
+    tech:
+      "PHP • MySQL • HTML5 • CSS3 • JavaScript • Font Awesome • XAMPP",
+
+    github:
+      "https://github.com/Hardiklonkar/food-ordering-system",
+
+    demo: "#",
+  },
 ];
 
 export default projects;
-
