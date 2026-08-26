@@ -1,0 +1,288 @@
+/* ========================================
+   RESUME SECTION
+======================================== */
+
+.resume-section {
+    padding: 90px 0;
+    background: #ffffff;
+}
+
+
+/* ========================================
+   RESUME CARD
+======================================== */
+
+.resume-card {
+    max-width: 1000px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    padding: 45px;
+
+    background: linear-gradient(
+        135deg,
+        #f8fafc,
+        #ffffff
+    );
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 15px 40px rgba(15, 23, 42, 0.08);
+
+    transition: all 0.3s ease;
+}
+
+.resume-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 20px 50px rgba(15, 23, 42, 0.14);
+}
+
+
+/* ========================================
+   ICON
+======================================== */
+
+.resume-icon {
+    min-width: 120px;
+    height: 120px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 52px;
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #2563eb,
+            #38bdf8
+        );
+
+    box-shadow:
+        0 10px 25px rgba(37, 99, 235, 0.25);
+}
+
+
+/* ========================================
+   CONTENT
+======================================== */
+
+.resume-content {
+    flex: 1;
+}
+
+.resume-content h3 {
+    margin-bottom: 5px;
+
+    font-size: 30px;
+
+    font-weight: 800;
+
+    color: #0f172a;
+}
+
+.resume-content h4 {
+    margin-bottom: 15px;
+
+    font-size: 17px;
+
+    font-weight: 700;
+
+    color: #2563eb;
+}
+
+.resume-content p {
+    margin-bottom: 22px;
+
+    color: #64748b;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+}
+
+
+/* ========================================
+   HIGHLIGHTS
+======================================== */
+
+.resume-highlights {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    margin-bottom: 25px;
+}
+
+.resume-highlights span {
+    padding: 8px 14px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    color: #2563eb;
+
+    background: #eff6ff;
+
+    border: 1px solid #bfdbfe;
+}
+
+
+/* ========================================
+   BUTTONS
+======================================== */
+
+.resume-buttons {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 14px;
+}
+
+.resume-btn {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    padding: 12px 22px;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    transition: all 0.3s ease;
+}
+
+.resume-btn.primary {
+    color: #ffffff;
+
+    background:
+        linear-gradient(
+            135deg,
+            #2563eb,
+            #1d4ed8
+        );
+
+    box-shadow:
+        0 8px 20px rgba(37, 99, 235, 0.2);
+}
+
+.resume-btn.primary:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 12px 25px rgba(37, 99, 235, 0.3);
+}
+
+.resume-btn.secondary {
+    color: #2563eb;
+
+    background: #ffffff;
+
+    border: 1px solid #2563eb;
+}
+
+.resume-btn.secondary:hover {
+    transform: translateY(-3px);
+
+    color: #ffffff;
+
+    background: #2563eb;
+}
+
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width: 768px) {
+
+    .resume-section {
+        padding: 70px 0;
+    }
+
+    .resume-card {
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 30px 22px;
+
+        gap: 25px;
+    }
+
+    .resume-content h3 {
+        font-size: 25px;
+    }
+
+    .resume-highlights {
+        justify-content: center;
+    }
+
+    .resume-buttons {
+        justify-content: center;
+    }
+
+}
+
+
+@media (max-width: 576px) {
+
+    .resume-card {
+        padding: 25px 18px;
+    }
+
+    .resume-icon {
+        min-width: 90px;
+        width: 90px;
+
+        height: 90px;
+
+        font-size: 40px;
+    }
+
+    .resume-content h3 {
+        font-size: 22px;
+    }
+
+    .resume-content h4 {
+        font-size: 15px;
+    }
+
+    .resume-content p {
+        font-size: 14px;
+    }
+
+    .resume-buttons {
+        flex-direction: column;
+
+        width: 100%;
+    }
+
+    .resume-btn {
+        width: 100%;
+    }
+
+}

@@ -1,4 +1,3 @@
-
 import "./Footer.css";
 
 function Footer() {
@@ -9,38 +8,72 @@ function Footer() {
 
       <div className="footer-container">
 
-        {/* Brand */}
+        {/* ========================================
+            BRAND
+        ======================================== */}
+
         <div className="footer-brand">
+
           <a href="#home" className="footer-logo">
-            <span>&lt;</span>Hardik<span>/&gt;</span>
+            <span>&lt;</span>
+            Hardik
+            <span>/&gt;</span>
           </a>
 
-          <p>
-            Web Developer | AI & ML Enthusiast | MCA Student
+          <p className="footer-tagline">
+            Web Developer building modern, responsive
+            and user-focused web applications.
           </p>
+
+          <div className="footer-role">
+            <span className="role-dot"></span>
+            Open to Opportunities
+          </div>
 
           <p className="footer-location">
             📍 Chhatrapati Sambhajinagar, Maharashtra
           </p>
+
         </div>
 
-        {/* Quick Links */}
+
+        {/* ========================================
+            QUICK LINKS
+        ======================================== */}
+
         <div className="footer-section">
+
           <h3>Quick Links</h3>
 
           <div className="footer-nav">
+
             <a href="#home">Home</a>
+
             <a href="#about">About</a>
+
             <a href="#education">Education</a>
+
             <a href="#skills">Skills</a>
+
             <a href="#projects">Projects</a>
+
             <a href="#certificates">Certificates</a>
+
+            <a href="#resume">Resume</a>
+
             <a href="#contact">Contact</a>
+
           </div>
+
         </div>
 
-        {/* Social Links */}
+
+        {/* ========================================
+            CONNECT
+        ======================================== */}
+
         <div className="footer-section">
+
           <h3>Connect With Me</h3>
 
           <div className="footer-socials">
@@ -48,38 +81,71 @@ function Footer() {
             <a
               href="https://github.com/Hardiklonkar"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
+              className="social-link"
             >
-              GitHub
+              <span className="social-icon">{"</>"}</span>
+              <span>GitHub</span>
+              <span className="social-arrow">↗</span>
             </a>
+
 
             <a
               href="https://www.linkedin.com/in/hardik-lonkar-18446296"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
+              className="social-link"
             >
-              LinkedIn
+              <span className="social-icon">in</span>
+              <span>LinkedIn</span>
+              <span className="social-arrow">↗</span>
             </a>
 
-            <a href="mailto:lonkarhardik@gmail.com">
-              Email
+
+            <a
+              href="mailto:lonkarhardik@gmail.com"
+              className="social-link"
+            >
+              <span className="social-icon">@</span>
+              <span>Email Me</span>
+              <span className="social-arrow">↗</span>
             </a>
 
           </div>
+
         </div>
 
       </div>
 
-      {/* Bottom */}
+
+      {/* ========================================
+          BOTTOM
+      ======================================== */}
+
       <div className="footer-bottom">
 
         <p>
           © {currentYear} Hardik Lonkar. All Rights Reserved.
         </p>
 
-        <a href="#home" className="back-top">
-          ↑ Back to Top
-        </a>
+        <div className="footer-bottom-right">
+
+          <span>
+            Built with React
+          </span>
+
+          <span className="bottom-divider">
+            •
+          </span>
+
+          <a
+            href="#home"
+            className="back-top"
+          >
+            ↑ Back to Top
+          </a>
+
+        </div>
 
       </div>
 
@@ -88,4 +154,3 @@ function Footer() {
 }
 
 export default Footer;
-

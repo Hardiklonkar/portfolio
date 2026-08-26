@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import "./Navbar.css";
 
@@ -12,12 +11,26 @@ function Navbar() {
   return (
     <nav className="navbar">
 
-      {/* Logo */}
-      <a href="#home" className="logo" onClick={closeMenu}>
-        <span>&lt;</span>Hardik<span>/&gt;</span>
+      {/* ========================================
+          LOGO
+      ======================================== */}
+
+      <a
+        href="#home"
+        className="logo"
+        onClick={closeMenu}
+        aria-label="Hardik Portfolio Home"
+      >
+        <span>&lt;</span>
+        Hardik
+        <span>/&gt;</span>
       </a>
 
-      {/* Desktop / Mobile Menu */}
+
+      {/* ========================================
+          NAVIGATION
+      ======================================== */}
+
       <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
 
         <li>
@@ -57,18 +70,38 @@ function Navbar() {
         </li>
 
         <li>
-          <a href="#contact" onClick={closeMenu}>
+          <a href="#resume" onClick={closeMenu}>
+            Resume
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="#contact"
+            onClick={closeMenu}
+            className="contact-nav-link"
+          >
             Contact
           </a>
         </li>
 
       </ul>
 
-      {/* Mobile Menu Button */}
+
+      {/* ========================================
+          MOBILE MENU BUTTON
+      ======================================== */}
+
       <button
+        type="button"
         className={`menu-toggle ${menuOpen ? "open" : ""}`}
         onClick={() => setMenuOpen(!menuOpen)}
-        aria-label="Toggle navigation menu"
+        aria-label={
+          menuOpen
+            ? "Close navigation menu"
+            : "Open navigation menu"
+        }
+        aria-expanded={menuOpen}
       >
         <span></span>
         <span></span>
