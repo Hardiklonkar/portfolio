@@ -110,8 +110,7 @@ const projects = [
     description:
       "A web-based Railway Reservation System developed using PHP and MySQL. The system allows users to search trains, book tickets, manage bookings, view tickets and profiles, while administrators can manage users, trains and bookings through an admin dashboard.",
 
-    tech:
-      "PHP • MySQL • HTML • CSS • JavaScript • XAMPP",
+    tech: "PHP • MySQL • HTML • CSS • JavaScript • XAMPP",
 
     github:
       "https://github.com/Hardiklonkar/railway-reservation-system",
@@ -143,6 +142,29 @@ const projects = [
       "https://github.com/Hardiklonkar/food-ordering-system",
 
     demo: "#",
+  },
+
+  {
+    title: "Swad Sangam - Restaurant Website",
+
+    images: [
+      "/images/projects/swad-sangam-home.png",
+      "/images/projects/swad-sangam-menu.png",
+      "/images/projects/swad-sangam-booking.png",
+      "/images/projects/swad-sangam-cart.png",
+      "/images/projects/swad-sangam-staff.png",
+    ],
+
+    description:
+      "A modern restaurant website built using React, TypeScript, Vite, and Tailwind CSS. The website includes restaurant menu, table booking, seating selection, cart management, customer reviews, special offers, and a staff dashboard with a responsive and modern user interface.",
+
+    tech:
+      "React • TypeScript • Vite • Tailwind CSS • JavaScript",
+
+    github:
+      "https://github.com/Hardiklonkar/swad-sangam-restaurant-website",
+
+    demo: "https://swad-sangam-website.vercel.app",
   },
 ];
 
