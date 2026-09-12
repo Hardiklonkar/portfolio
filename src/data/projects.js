@@ -147,13 +147,7 @@ const projects = [
   {
     title: "Swad Sangam - Restaurant Website",
 
-    images: [
-      "/images/projects/swad-sangam-home.png",
-      "/images/projects/swad-sangam-menu.png",
-      "/images/projects/swad-sangam-booking.png",
-      "/images/projects/swad-sangam-cart.png",
-      "/images/projects/swad-sangam-staff.png",
-    ],
+    image: "/images/projects/swad-sangam-home.png",
 
     description:
       "A modern restaurant website built using React, TypeScript, Vite, and Tailwind CSS. The website includes restaurant menu, table booking, seating selection, cart management, customer reviews, special offers, and a staff dashboard with a responsive and modern user interface.",
