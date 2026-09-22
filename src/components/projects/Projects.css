@@ -1,135 +1,150 @@
-/* ========================================
+
+/* =========================================================
    PROJECTS SECTION
-======================================== */
+========================================================= */
 
 .projects {
     position: relative;
-
-    padding: 100px 9%;
-
+    padding: 110px 7%;
     background:
-        linear-gradient(
-            180deg,
-            #f8fafc 0%,
-            #ffffff 100%
-        );
-
+        radial-gradient(circle at 10% 10%, rgba(37, 99, 235, 0.06), transparent 30%),
+        radial-gradient(circle at 90% 85%, rgba(56, 189, 248, 0.06), transparent 30%),
+        #f8fafc;
     overflow: hidden;
 }
 
 
-/* ========================================
+/* =========================================================
    BACKGROUND DECORATION
-======================================== */
+========================================================= */
 
 .projects::before {
     content: "";
-
     position: absolute;
 
-    width: 420px;
-    height: 420px;
+    width: 500px;
+    height: 500px;
 
-    top: -220px;
+    top: -280px;
     right: -180px;
 
     border-radius: 50%;
 
-    background:
-        rgba(56, 189, 248, 0.07);
+    background: rgba(37, 99, 235, 0.055);
 
-    filter: blur(70px);
+    filter: blur(90px);
 
     pointer-events: none;
 }
 
 .projects::after {
     content: "";
-
     position: absolute;
 
-    width: 350px;
-    height: 350px;
+    width: 420px;
+    height: 420px;
 
-    bottom: -200px;
-    left: -150px;
+    bottom: -260px;
+    left: -180px;
 
     border-radius: 50%;
 
-    background:
-        rgba(99, 102, 241, 0.05);
+    background: rgba(14, 165, 233, 0.05);
 
-    filter: blur(70px);
+    filter: blur(90px);
 
     pointer-events: none;
 }
 
 
-/* ========================================
+/* =========================================================
    CONTAINER
-======================================== */
+========================================================= */
 
 .projects-container {
-    max-width: 1200px;
+    position: relative;
+
+    max-width: 1240px;
 
     margin: 0 auto;
-
-    position: relative;
 
     z-index: 2;
 }
 
 
-/* ========================================
+/* =========================================================
    SECTION HEADING
-======================================== */
+========================================================= */
 
 .projects-heading {
-    max-width: 760px;
+    max-width: 780px;
 
-    margin:
-        0 auto 55px;
+    margin: 0 auto 65px;
 
     text-align: center;
 }
 
 .projects-eyebrow {
-    display: inline-block;
+    display: inline-flex;
 
-    margin-bottom: 10px;
+    align-items: center;
+
+    gap: 8px;
+
+    margin-bottom: 14px;
+
+    padding: 7px 13px;
 
     color: #2563eb;
 
-    font-size: 13px;
+    background: rgba(37, 99, 235, 0.07);
+
+    border: 1px solid rgba(37, 99, 235, 0.12);
+
+    border-radius: 50px;
+
+    font-size: 11px;
 
     font-weight: 800;
 
-    letter-spacing: 1.5px;
+    letter-spacing: 1.4px;
 
     text-transform: uppercase;
 }
 
+.projects-eyebrow::before {
+    content: "";
+
+    width: 6px;
+    height: 6px;
+
+    border-radius: 50%;
+
+    background: #2563eb;
+
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
+}
+
 .projects-heading h2 {
-    margin: 0 0 15px;
+    margin: 0 0 17px;
 
     color: #0f172a;
 
-    font-size:
-        clamp(2rem, 4vw, 2.7rem);
+    font-size: clamp(2.2rem, 4vw, 3.15rem);
 
-    line-height: 1.2;
+    line-height: 1.15;
 
     font-weight: 850;
 
-    letter-spacing: -0.8px;
+    letter-spacing: -1.5px;
 }
 
 .projects-heading h2 span {
     background:
         linear-gradient(
-            90deg,
+            100deg,
             #2563eb,
-            #38bdf8
+            #0ea5e9
         );
 
     -webkit-background-clip: text;
@@ -139,7 +154,7 @@
 }
 
 .projects-heading p {
-    max-width: 680px;
+    max-width: 690px;
 
     margin: 0 auto;
 
@@ -147,13 +162,13 @@
 
     font-size: 15px;
 
-    line-height: 1.8;
+    line-height: 1.85;
 }
 
 
-/* ========================================
+/* =========================================================
    PROJECT GRID
-======================================== */
+========================================================= */
 
 .projects-grid {
     display: grid;
@@ -161,106 +176,116 @@
     grid-template-columns:
         repeat(2, minmax(0, 1fr));
 
-    gap: 28px;
+    gap: 30px;
 }
 
 
-/* ========================================
+/* =========================================================
    PROJECT CARD
-======================================== */
+========================================================= */
 
 .project-card {
+    position: relative;
+
     display: flex;
 
     flex-direction: column;
 
+    min-width: 0;
+
     overflow: hidden;
 
-    background: #ffffff;
+    background:
+        rgba(255, 255, 255, 0.96);
 
     border:
-        1px solid #e2e8f0;
+        1px solid rgba(148, 163, 184, 0.25);
 
-    border-radius: 18px;
+    border-radius: 22px;
 
     box-shadow:
-        0 8px 25px
-        rgba(15, 23, 42, 0.055);
+        0 10px 35px rgba(15, 23, 42, 0.055);
 
     transition:
-        transform 0.35s ease,
-        box-shadow 0.35s ease,
-        border-color 0.35s ease;
+        transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+        box-shadow 0.4s ease,
+        border-color 0.4s ease;
 }
 
 .project-card:hover {
-    transform:
-        translateY(-8px);
+    transform: translateY(-10px);
 
     border-color:
-        rgba(37, 99, 235, 0.35);
+        rgba(37, 99, 235, 0.22);
 
     box-shadow:
-        0 20px 45px
-        rgba(15, 23, 42, 0.11);
+        0 25px 65px rgba(15, 23, 42, 0.12);
 }
 
 
-/* ========================================
+/* =========================================================
    IMAGE AREA
-======================================== */
+========================================================= */
 
 .project-image-wrapper {
     position: relative;
 
-    padding: 14px;
+    padding: 12px;
 
     background:
         linear-gradient(
-            135deg,
-            #e2e8f0,
-            #f1f5f9
+            145deg,
+            #eaf1f8,
+            #f8fafc
         );
 
     overflow: hidden;
 }
 
 
-/* ========================================
+/* =========================================================
    SINGLE IMAGE
-======================================== */
+========================================================= */
 
 .project-image.single-image {
     display: block;
 
     width: 100%;
 
-    height: 340px;
+    height: 330px;
 
     object-fit: cover;
 
-    border-radius: 12px;
+    border-radius: 15px;
 
     transition:
-        transform 0.5s ease;
+        transform 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+        filter 0.5s ease;
+}
+
+.project-card:hover
+.project-image.single-image {
+    transform: scale(1.035);
+
+    filter: saturate(1.04);
 }
 
 
-/* ========================================
+/* =========================================================
    MULTIPLE IMAGES
-======================================== */
+========================================================= */
 
 .project-images {
     display: grid;
 
     grid-template-columns:
-        repeat(3, 1fr);
+        repeat(3, minmax(0, 1fr));
 
     gap: 8px;
 
     overflow: hidden;
 
-    border-radius: 12px;
+    border-radius: 15px;
 }
 
 .project-images .project-image {
@@ -272,38 +297,26 @@
 
     object-fit: cover;
 
-    border-radius: 8px;
+    border-radius: 9px;
 
     transition:
-        transform 0.45s ease;
+        transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .project-card:hover
 .project-images .project-image {
-    transform:
-        scale(1.025);
+    transform: scale(1.035);
 }
 
 
-/* ========================================
-   SINGLE IMAGE HOVER
-======================================== */
-
-.project-card:hover
-.project-image.single-image {
-    transform:
-        scale(1.025);
-}
-
-
-/* ========================================
+/* =========================================================
    IMAGE OVERLAY
-======================================== */
+========================================================= */
 
 .project-overlay {
     position: absolute;
 
-    inset: 14px;
+    inset: 12px;
 
     display: flex;
 
@@ -311,38 +324,23 @@
 
     justify-content: center;
 
-    border-radius: 12px;
-
-    color: #ffffff;
+    border-radius: 15px;
 
     background:
-        rgba(2, 6, 23, 0.55);
+        linear-gradient(
+            135deg,
+            rgba(15, 23, 42, 0.72),
+            rgba(37, 99, 235, 0.45)
+        );
 
     opacity: 0;
 
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(3px);
 
     transition:
-        opacity 0.35s ease;
+        opacity 0.4s ease;
 
     pointer-events: none;
-}
-
-.project-overlay span {
-    padding: 8px 15px;
-
-    border-radius: 20px;
-
-    background:
-        rgba(255, 255, 255, 0.12);
-
-    border:
-        1px solid
-        rgba(255, 255, 255, 0.25);
-
-    font-size: 12px;
-
-    font-weight: 700;
 }
 
 .project-card:hover
@@ -350,10 +348,32 @@
     opacity: 1;
 }
 
+.project-overlay span {
+    padding: 9px 17px;
 
-/* ========================================
+    color: #ffffff;
+
+    background:
+        rgba(255, 255, 255, 0.12);
+
+    border:
+        1px solid rgba(255, 255, 255, 0.28);
+
+    border-radius: 50px;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 0.4px;
+
+    backdrop-filter: blur(8px);
+}
+
+
+/* =========================================================
    PROJECT NUMBER
-======================================== */
+========================================================= */
 
 .project-number {
     position: absolute;
@@ -361,8 +381,8 @@
     top: 25px;
     right: 25px;
 
-    width: 42px;
-    height: 42px;
+    width: 44px;
+    height: 44px;
 
     display: flex;
 
@@ -370,31 +390,42 @@
 
     justify-content: center;
 
-    border-radius: 50%;
-
     color: #ffffff;
 
     background:
         rgba(15, 23, 42, 0.88);
 
     border:
-        1px solid
-        rgba(255, 255, 255, 0.12);
+        1px solid rgba(255, 255, 255, 0.18);
 
-    backdrop-filter:
-        blur(8px);
+    border-radius: 50%;
 
-    font-size: 12px;
+    font-size: 11px;
 
     font-weight: 800;
 
-    z-index: 3;
+    letter-spacing: 0.5px;
+
+    backdrop-filter: blur(10px);
+
+    z-index: 5;
+
+    transition:
+        transform 0.35s ease,
+        background 0.35s ease;
+}
+
+.project-card:hover
+.project-number {
+    transform: rotate(8deg) scale(1.05);
+
+    background: #2563eb;
 }
 
 
-/* ========================================
+/* =========================================================
    PROJECT CONTENT
-======================================== */
+========================================================= */
 
 .project-content {
     display: flex;
@@ -403,13 +434,13 @@
 
     flex: 1;
 
-    padding: 25px;
+    padding: 27px;
 }
 
 
-/* ========================================
+/* =========================================================
    PROJECT META
-======================================== */
+========================================================= */
 
 .project-meta {
     display: flex;
@@ -418,9 +449,9 @@
 
     justify-content: space-between;
 
-    gap: 10px;
+    gap: 12px;
 
-    margin-bottom: 10px;
+    margin-bottom: 13px;
 }
 
 .project-label {
@@ -428,34 +459,42 @@
 
     font-size: 10px;
 
-    font-weight: 800;
+    font-weight: 850;
 
-    letter-spacing: 1px;
+    letter-spacing: 1.3px;
 }
 
 .project-status {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 5px;
+
     color: #16a34a;
 
     font-size: 10px;
 
-    font-weight: 700;
+    font-weight: 750;
 }
 
 
-/* ========================================
+/* =========================================================
    PROJECT TITLE
-======================================== */
+========================================================= */
 
 .project-content h3 {
     margin: 0 0 12px;
 
     color: #0f172a;
 
-    font-size: 21px;
+    font-size: 22px;
 
-    line-height: 1.35;
+    line-height: 1.3;
 
-    font-weight: 800;
+    font-weight: 820;
+
+    letter-spacing: -0.35px;
 
     transition:
         color 0.3s ease;
@@ -467,24 +506,24 @@
 }
 
 
-/* ========================================
+/* =========================================================
    DESCRIPTION
-======================================== */
+========================================================= */
 
 .project-content p {
-    margin: 0 0 20px;
+    margin: 0 0 21px;
 
     color: #64748b;
 
     font-size: 14px;
 
-    line-height: 1.75;
+    line-height: 1.78;
 }
 
 
-/* ========================================
+/* =========================================================
    TECHNOLOGIES
-======================================== */
+========================================================= */
 
 .tech-wrapper {
     display: flex;
@@ -493,7 +532,7 @@
 
     gap: 7px;
 
-    margin-bottom: 23px;
+    margin-bottom: 25px;
 }
 
 .tech {
@@ -503,38 +542,41 @@
 
     padding: 6px 10px;
 
-    border-radius: 20px;
-
-    color: #1d4ed8;
+    color: #1e40af;
 
     background:
-        #eff6ff;
+        #f1f5ff;
 
     border:
         1px solid #dbeafe;
 
+    border-radius: 7px;
+
     font-size: 10px;
 
-    font-weight: 700;
+    font-weight: 750;
 
     transition:
-        all 0.3s ease;
+        transform 0.25s ease,
+        background 0.25s ease,
+        color 0.25s ease,
+        border-color 0.25s ease;
 }
 
 .tech:hover {
     color: #ffffff;
 
-    background:
-        #2563eb;
+    background: #2563eb;
 
-    border-color:
-        #2563eb;
+    border-color: #2563eb;
+
+    transform: translateY(-2px);
 }
 
 
-/* ========================================
+/* =========================================================
    BUTTONS
-======================================== */
+========================================================= */
 
 .project-buttons {
     display: flex;
@@ -545,6 +587,8 @@
 }
 
 .project-btn {
+    position: relative;
+
     flex: 1;
 
     display: flex;
@@ -553,54 +597,54 @@
 
     justify-content: center;
 
-    gap: 7px;
+    gap: 8px;
 
-    min-height: 42px;
+    min-height: 44px;
 
-    padding: 10px 14px;
+    padding: 10px 15px;
 
-    border-radius: 9px;
+    border-radius: 10px;
 
     text-decoration: none;
 
     font-size: 12px;
 
-    font-weight: 750;
+    font-weight: 800;
+
+    overflow: hidden;
 
     transition:
         transform 0.3s ease,
-        box-shadow 0.3s ease,
-        background 0.3s ease;
+        box-shadow 0.3s ease;
 }
 
 
-/* ========================================
-   GITHUB
-======================================== */
+/* =========================================================
+   GITHUB BUTTON
+========================================================= */
 
 .project-btn.github {
     color: #ffffff;
 
     background:
-        #111827;
+        linear-gradient(
+            135deg,
+            #111827,
+            #1f2937
+        );
 }
 
 .project-btn.github:hover {
-    background:
-        #020617;
-
-    transform:
-        translateY(-3px);
+    transform: translateY(-3px);
 
     box-shadow:
-        0 8px 18px
-        rgba(15, 23, 42, 0.2);
+        0 10px 22px rgba(15, 23, 42, 0.2);
 }
 
 
-/* ========================================
-   DEMO
-======================================== */
+/* =========================================================
+   DEMO BUTTON
+========================================================= */
 
 .project-btn.demo {
     color: #ffffff;
@@ -609,23 +653,21 @@
         linear-gradient(
             135deg,
             #2563eb,
-            #1d4ed8
+            #0ea5e9
         );
 }
 
 .project-btn.demo:hover {
-    transform:
-        translateY(-3px);
+    transform: translateY(-3px);
 
     box-shadow:
-        0 8px 20px
-        rgba(37, 99, 235, 0.25);
+        0 10px 25px rgba(37, 99, 235, 0.24);
 }
 
 
-/* ========================================
+/* =========================================================
    BUTTON ICON
-======================================== */
+========================================================= */
 
 .btn-icon {
     font-size: 12px;
@@ -643,13 +685,13 @@
 .project-btn:hover
 .btn-arrow {
     transform:
-        translate(2px, -2px);
+        translate(3px, -3px);
 }
 
 
-/* ========================================
-   PROJECTS FOOTER
-======================================== */
+/* =========================================================
+   FOOTER
+========================================================= */
 
 .projects-footer {
     display: flex;
@@ -658,9 +700,9 @@
 
     justify-content: center;
 
-    gap: 8px;
+    gap: 9px;
 
-    margin-top: 45px;
+    margin-top: 52px;
 
     color: #64748b;
 
@@ -674,10 +716,11 @@
 
     text-decoration: none;
 
-    font-weight: 750;
+    font-weight: 800;
 
     transition:
-        color 0.3s ease;
+        color 0.3s ease,
+        transform 0.3s ease;
 }
 
 .projects-footer a:hover {
@@ -685,97 +728,101 @@
 }
 
 
-/* ========================================
+/* =========================================================
    TABLET
-======================================== */
+========================================================= */
 
 @media (max-width: 900px) {
 
     .projects {
-        padding: 85px 6%;
+        padding: 90px 6%;
     }
 
     .projects-grid {
-        grid-template-columns:
-            1fr;
+        grid-template-columns: 1fr;
     }
 
     .project-image.single-image {
-        height: 320px;
-    }
-
-    .project-images .project-image {
-        height: 180px;
-    }
-}
-
-
-/* ========================================
-   MOBILE
-======================================== */
-
-@media (max-width: 576px) {
-
-    .projects {
-        padding:
-            70px 18px;
-    }
-
-    .projects-heading {
-        margin-bottom: 40px;
-    }
-
-    .projects-heading h2 {
-        font-size: 31px;
-    }
-
-    .projects-heading p {
-        font-size: 14px;
-
-        line-height: 1.7;
-    }
-
-    .projects-grid {
-        gap: 20px;
-    }
-
-    .project-image-wrapper {
-        padding: 10px;
-    }
-
-    .project-image.single-image {
-        height: 240px;
-
-        border-radius: 10px;
-    }
-
-    .project-images {
-        grid-template-columns:
-            1fr;
-
-        gap: 7px;
+        height: 350px;
     }
 
     .project-images .project-image {
         height: 190px;
     }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 576px) {
+
+    .projects {
+        padding: 75px 17px;
+    }
+
+    .projects-heading {
+        margin-bottom: 45px;
+    }
+
+    .projects-heading h2 {
+        font-size: 31px;
+        letter-spacing: -1px;
+    }
+
+    .projects-heading p {
+        font-size: 13.5px;
+
+        line-height: 1.75;
+    }
+
+    .projects-grid {
+        gap: 21px;
+    }
+
+    .project-card {
+        border-radius: 18px;
+    }
+
+    .project-image-wrapper {
+        padding: 9px;
+    }
+
+    .project-image.single-image {
+        height: 235px;
+
+        border-radius: 11px;
+    }
+
+    .project-images {
+        grid-template-columns: 1fr;
+
+        gap: 7px;
+    }
+
+    .project-images .project-image {
+        height: 185px;
+    }
 
     .project-overlay {
-        inset: 10px;
+        inset: 9px;
+
+        border-radius: 11px;
     }
 
     .project-number {
         top: 18px;
         right: 18px;
 
-        width: 36px;
-        height: 36px;
+        width: 37px;
+        height: 37px;
 
         font-size: 10px;
     }
 
     .project-content {
-        padding: 20px;
+        padding: 21px;
     }
 
     .project-content h3 {
@@ -784,6 +831,8 @@
 
     .project-content p {
         font-size: 13px;
+
+        line-height: 1.7;
     }
 
     .project-buttons {
@@ -799,24 +848,24 @@
     .projects-footer {
         flex-direction: column;
 
-        gap: 5px;
+        gap: 6px;
 
-        margin-top: 35px;
+        margin-top: 38px;
 
         font-size: 12px;
     }
 }
 
 
-/* ========================================
+/* =========================================================
    EXTRA SMALL
-======================================== */
+========================================================= */
 
 @media (max-width: 380px) {
 
     .projects {
-        padding-left: 14px;
-        padding-right: 14px;
+        padding-left: 13px;
+        padding-right: 13px;
     }
 
     .projects-heading h2 {
@@ -832,14 +881,14 @@
 
         align-items: flex-start;
 
-        gap: 5px;
+        gap: 6px;
     }
 }
 
 
-/* ========================================
-   REDUCED MOTION
-======================================== */
+/* =========================================================
+   ACCESSIBILITY
+========================================================= */
 
 @media (prefers-reduced-motion: reduce) {
 
@@ -847,7 +896,9 @@
     .project-image,
     .tech,
     .project-btn,
-    .project-overlay {
+    .project-overlay,
+    .project-number {
         transition: none !important;
     }
 }
+
